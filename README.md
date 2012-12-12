@@ -13,7 +13,9 @@ To use this session state provider add the following to your application's web.c
                      type="MongoDB.Session.SessionStateProvider" 
                      connectionString="mongodb://localhost:27017/?safe=true" 
                      dbName="SessionState" 
-                     collectionName="Session" />
+                     collectionName="Session"
+                     logSessionItems="false"
+                     logEvents="false" />
             </providers>
         </sessionState>
     </system.web>
